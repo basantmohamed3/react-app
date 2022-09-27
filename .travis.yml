@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t basantmo/docker-react -f dockerfile.dev .
+  - docker build -t basantmo/docker-react -f Dockerfile.dev .
 
 sceipts:
   - docker run basantmo/react-docker npm run test
